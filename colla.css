@@ -1,0 +1,83 @@
+/* collab.css */
+
+/* breadcrumb 클래스 추가 */
+main .inner .collabTop {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* 검색바 */
+.boardBar{
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+}
+.boardBar .sel{
+  border: 1px solid #e7e7e7;
+  height: 38px;
+  padding: 0 10px;
+  color: #666;
+  background: #fff;
+}
+.boardBar .right{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.boardBar input{
+  border: 1px solid #e7e7e7;
+  height: 38px;
+  padding: 0 12px;
+  width: 220px;
+  outline: none;
+}
+.boardBar input:focus{
+  border-color: var(--point);
+}
+.boardBar .searchBtn{
+  border: 1px solid #e7e7e7;
+  height: 38px;
+  width: 44px;
+  background: #fff;
+  cursor: pointer;
+}
+.boardBar .searchBtn:hover{
+  border-color: var(--point);
+}
+
+/* 콜라보는 4열이 원본 느낌이라 살짝만 변경 */
+.collabList{
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* 텍스트 정리 */
+.collabList li p:nth-of-type(1){
+  font-size: 15px;
+  line-height: 1.35;
+  height: 44px;           /* 2줄 고정 느낌 */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.collabList li p.small{
+  font-size: 12px;
+  color: #999;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+/* 반응형 */
+@media (max-width: 1200px){
+  .collabList{ grid-template-columns: repeat(3,1fr); }
+}
+@media (max-width: 900px){
+  .collabList{ grid-template-columns: repeat(2,1fr); }
+  .boardBar{ justify-content: space-between; }
+  .boardBar input{ width: 160px; }
+}

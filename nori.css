@@ -1,0 +1,167 @@
+main {
+    padding: 180px 0;
+}
+
+main .inner {}
+
+main .inner .section-title {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+main .inner .section-title h2 {
+    font-weight: bold;
+}
+
+main .inner .noriTop {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+main .inner .noriTop p {}
+
+main .inner .noriTop p span {}
+
+.section {}
+
+.section .container {}
+
+.section .container .topList {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section .container .topLeft p {}
+
+.section .container .topLeft p span {
+    color: aquamarine;
+}
+
+
+.section .container .topRight {}
+
+.section .container .topRight .filterList {
+    display: flex;
+    gap: 20px;
+}
+
+.section .container .topRight .filterList li:nth-child(1)::after {
+    display: none;
+}
+
+.section .container .topRight .filterList li::after {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #999;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+
+}
+
+.section .container .topRight .filterList li {
+    cursor: pointer;
+}
+
+.section .container .topRight .filterList li.active {
+    font-weight: bold;
+}
+
+.section .container .topRight .filterList li:hover {
+    opacity: 0.7;
+}
+
+.section .container .goodsBox {}
+
+.section .container .goodsBox .goodsList {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.section .container .goodsBox .goodsList li {
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.section .container .goodsBox .goodsList li .img-box {}
+
+.section .container .goodsBox .goodsList li .img-box img {
+    margin-bottom: 20px;
+}
+
+.section .container .goodsBox .goodsList li p {
+    font-size: 16px;
+}
+
+.section .container .goodsBox .goodsList li p:nth-of-type(1) {
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.section .container .goodsBox .goodsList li p:nth-of-type(1):hover {
+    color: aqua
+}
+
+.section .container .goodsBox .goodsList li .img-box img {
+    width: 100%;
+}
+
+.section .container .goodsBox .goodsList li .img-box img:nth-of-type(2) {
+    display: none;
+}
+
+.pagenation {
+    text-align: center;
+    font-size: 20px;
+}
+
+.pagenation span {
+    color: aquamarine;
+    border-bottom: 1px solid aquamarine;
+}
+
+.pagenation i {
+    color: #dcdcdc;
+    padding: 0 10px;
+}
+
+@media screen and (max-width:768px) {
+
+    main .inner .section-title h2 {
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    .section .container .topList {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .section .container .goodsBox .goodsList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section .container .goodsBox .goodsList li p {
+        font-size: 14px;
+        height: 50px;
+    }
+
+    .section .container .goodsBox .goodsList li {
+        margin-bottom: 0px;
+    }
+
+    .section .container .topRight .filterList li {
+        font-size: 14px;
+    }
+
+}

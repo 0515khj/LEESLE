@@ -1,0 +1,178 @@
+.loginMain {
+    padding-top: 160px;
+  }
+.loginMain .container {
+  width: 100%;
+  max-width: 520px;   
+  margin: 0 auto;
+  padding: 80px 0; 
+}
+
+.loginMain .section-title {
+    text-align: center;
+}
+.loginMain .section-title h2 {
+  color: #7ccad3;
+  font-weight: 500;
+}
+
+.loginMain .loginBox {
+  width: 100%;
+  margin: 0 auto;       
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.loginMain .loginBox input,
+.loginMain .loginBox p,
+.loginMain .loginBox a,
+.loginMain .loginBox button{
+  width: 100%;      
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.loginMain .loginBox input {
+  border: 1px solid #e2e2e2;
+}
+.loginMain .loginBox input::placeholder {
+  color: #e2e2e2;
+  padding-left: 15px;
+}
+
+.loginMain .loginBox #id {}
+.loginMain .loginBox #pw {}
+.loginMain .loginBox button {
+  font-size: 18px;
+  font-weight: 700;
+  height: 60px;
+}
+.loginMain .loginBox .loginBtn {
+  background: #7ccad3;
+  color: #fff;
+  border: 1px solid #7ccad3;
+}
+.loginMain .loginBox .joinBtn {
+  border: 1px solid #7ccad3;
+  background: #fff;
+  color: #7ccad3;
+}
+.loginMain .loginBox p {
+  margin-top: 10px;
+}
+
+.loginMain .socialLogin {
+  display: grid; gap: 10px 50px;
+  grid-template-columns: repeat(2,1fr);
+  margin-bottom: 50px;
+}
+
+
+
+.loginMain .socialLogin .naver .img-box {
+  background: green;
+}
+.loginMain .socialLogin .socialIcon:nth-of-type(1) .img-box {
+  background: yellow;
+}
+.loginMain .socialLogin .socialIcon:nth-of-type(3) .img-box {
+  background: #1877F2;
+  color: #fff;
+}
+.loginMain .socialLogin .socialIcon:nth-of-type(4) .img-box {
+  background: #fff;
+  border: 1px solid #f2f2f2;
+}
+
+.loginMain .socialLogin .socialIcon p {
+  color: #1a1a1a;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.loginMain .socialLogin .socialIcon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.loginMain .socialLogin .socialIcon .img-box {
+  width: 30px; height: 30px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.loginMain .socialLogin .img-box img {
+  border-radius: 0;
+  width: 15px; height: 15px;
+}
+.loginMain .socialLogin .socialIcon .img-box .kakaoImg {
+  width: 15.5px;
+}
+
+.loginMain .socialLogin .socialIcon .img-box .facebookIcon {
+
+}
+.loginMain .socialLogin .socialIcon .img-box .googleImg {
+  height: 15.5px;
+}
+
+.loginMain .socialLogin .socialIcon {
+  display: flex; gap: 10px;
+  padding: 5px 10px;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+.loginMain .socialLogin .socialIcon:hover {
+  background: #f3fbfd;
+}
+.loginMain .socialLogin .socialIcon:hover p{}
+
+.loginMain .event {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.loginMain .event .eventBox {}
+.loginMain .event .eventBox img {
+  width: 30px; height: 30px;
+  display: flex;
+  margin: 10px auto;
+
+}
+.loginMain .event .eventBox p {
+  text-align: center;
+}
+
+
+@media screen and (max-width:768px) {
+  .loginMain .container {
+  width: 90%;   
+  }
+  .loginMain .loginBox input,
+  .loginMain .loginBox p,
+  .loginMain .loginBox a,
+  .loginMain .loginBox button{
+    width: 100%;      
+    height: 40px;
+    box-sizing: border-box;
+  }
+  .loginMain .section-title h2 {
+    font-size: 28px;
+}
+
+.loginMain .socialLogin {
+  width: 100%;
+  gap: 10px;
+}
+.loginMain .socialLogin .socialIcon p {
+  font-size: 14px;
+}
+
+}
